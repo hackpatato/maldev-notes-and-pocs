@@ -3,5 +3,5 @@ Hi. This is the “maldev-notes-and-pocs” project I created to share with you 
 
 <div align="center">
 
-  <img src="logo.jpg" alt="My Logo" width="360">
+  <img src="logo.png" alt="My Logo" width="360">
 
