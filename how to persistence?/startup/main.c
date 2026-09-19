@@ -8,7 +8,7 @@
 
 //first 
 int main() {
-    wchar_t path[MAX_PATH];
+    wchar_t appPath[MAX_PATH];
     wchar_t exePath[MAX_PATH];
 
     HRESULT result1 = SHGetFolderPathW(NULL, CSIDL_STARTUP, NULL, 0, appPath);
@@ -18,7 +18,7 @@ int main() {
     // we finded the startup 
     //and we going to  find the where are we?
     DWORD result2 = GetModuleFileNameW(NULL, exePath, MAX_PATH);
-    if (SUCCEDED(result1)) {
+    if (SUCCEEDED(result1)) {
         lstrcatW(appPath, L"\\main.exe");
 
         /*GetModuleFileNameW for windows api . to find the what we are (path and name)
