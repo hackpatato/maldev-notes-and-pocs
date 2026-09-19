@@ -23,9 +23,9 @@ int main() {
       The maxpath for limit is 260 characters
     */
     if (CopyFile(exePath, appPath, FALSE)) {
-        printf("We did it ")
+        printf("We did it ");
     } else {
-        printf("We didn't succeed  ")
+        printf("We didn't succeed  ");
     }
     /*
     CopyFile is windows api
