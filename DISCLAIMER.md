@@ -46,4 +46,4 @@ disclosure practices — report to the vendor before public disclosure and allow
 reasonable time for a patch.
 
 ---
-*If you do not agree to these terms, do not use this software.*
+*If you do not agree to these terms, do not use this software and these educational materials.*
