@@ -8,4 +8,4 @@ Hi. This is the “maldev-notes-and-pocs” project I created to share with you 
 
   <img src="logo.png" alt="My Logo" width="360">
 
-NOTE!:I now publish my written documentation exclusively on GitBook.
+NOTE!: *I now publish my written documentation exclusively on GitBook.*
